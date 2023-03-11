@@ -7,10 +7,10 @@
     Returns:
         list: return answer
 */
-List func(List list1) {
-  return [list1[2]];
+List func(List list1 ,int i) {
+  return [list1[i]];
 }
 
 void main() {
-  print(func([1, 2, 3, 4, 4, 55, 6, 6]));
+  print(func([1, 2, 3, 4, 4, 55, 6, 6],3));
 }
