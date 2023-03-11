@@ -6,4 +6,19 @@
     Returns:
         list: return answer
 */
-void main() {}
+List func(List list1) {
+  int a = list1.length;
+  int b = 0;
+  String ans = 'True';
+  while (b < a) {
+    if (list1[b] == 1) {
+      list1[b] = ans;
+    }
+    b++;
+  }
+  return list1;
+}
+
+void main() {
+  print(func([0,0,1,1,0,1]));
+}
